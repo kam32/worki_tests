@@ -15,7 +15,7 @@ import static io.qameta.allure.Allure.step;
 public class UiTests extends TestBaseUi {
 
     @Test
-    @AllureId("")
+    @AllureId("1747")
     @Feature("Authorization")
     @DisplayName("Неуспешная авторизация")
     void unsuccessfulAuthorization() {
@@ -32,7 +32,7 @@ public class UiTests extends TestBaseUi {
     }
 
     @Test
-    @AllureId("")
+    @AllureId("1748")
     @Feature("Job Categories")
     @DisplayName("Проверка количество элементов в слайдере \"Вакансии по категориям\"")
     void checkJobCategoriesSize() {
@@ -45,7 +45,7 @@ public class UiTests extends TestBaseUi {
     }
 
     @Test
-    @AllureId("")
+    @AllureId("1749")
     @Feature("Change City")
     @DisplayName("Проверка смены города на Новосибирск")
     void otherCitySearch() {
@@ -71,9 +71,9 @@ public class UiTests extends TestBaseUi {
     }
 
     @Test
-    @AllureId("")
-    @Feature("Employer Price")
-    @DisplayName("Проверить цену для работодателей")
+    @AllureId("1750")
+    @Feature("Feedback")
+    @DisplayName("Проверить, что кнопка \"Отправить\" в форме обратной связи неактивна без введенных данных")
     void checkEmployerPrice() {
         step("Открываем главную страницу", () -> {
             open("");
@@ -84,13 +84,16 @@ public class UiTests extends TestBaseUi {
         step("Кликаем на \"Цены\"", () -> {
             $$("a[class*='subheaderMenu']").find(text("Цены")).click();
         });
-        step("Проверить, что под 1 вакансией цена 289 р.", () -> {
-            $$("[class*='chartItem']").find(exactText("1 вакансия")).sibling(0).shouldHave(text("289"));
+        step("Кликаем по кнопке \"Оставить заявку\"", () -> {
+            $$("[class*='button'] span").find(text("Оставить заявку")).click();
+        });
+        step("Проверяем, что кнопка \"Отправить\" неактивна", () -> {
+            $$("[class*='button'] span").find(text("Отправить")).parent().shouldHave(attribute("disabled"));
         });
     }
 
     @Test
-    @AllureId("")
+    @AllureId("1751")
     @Feature("Search Filters")
     @DisplayName("Проверить работу фильтров поиска")
     void checkSearchFilters() {
@@ -104,13 +107,6 @@ public class UiTests extends TestBaseUi {
         });
         step("Проверить, что выбрана удаленная работа", () -> {
             $("[data-test-id='JobsFilterCategorySelectField'] [class*='selectInput']").shouldHave(text("Удаленная работа"));
-        });
-        step("Выбрать \"Неполный рабочий день\"", () -> {
-            $$("[class*='jobsFilterConditions']").find(text("Неполный рабочий день")).click();
-        });
-        step("Проверить, что выбран чекбокс  \"Неполный рабочий день\"", () -> {
-            $$("[class*='jobsFilterConditions']").find(text("Неполный рабочий день")).parent()
-                    .$("input").shouldBe(checked);
         });
     }
 }
