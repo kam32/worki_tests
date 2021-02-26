@@ -71,6 +71,6 @@ tasks.withType(Test) {
 }
 
 task all(type: Test) {
-    useJUnitPlatform ()
+    useJUnitPlatform()
 }
 

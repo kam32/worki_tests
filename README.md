@@ -1,4 +1,4 @@
-# worki.ru tests
+# UI-тесты worki.ru (vkrabota.ru)
 ## Использованные инструменты:
 * Java
 * Gradle

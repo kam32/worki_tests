@@ -102,11 +102,12 @@ public class UiTests extends TestBaseUi {
         });
         step("Клик на категории, выбираем удаленную работу", () -> {
             $("[data-test-id='JobsFilterCategorySelectField'] #Shape").scrollIntoView(true).click(usingJavaScript());
-            $("[data-test-id='JobsFilterCategorySelectField'] [class*='dropDown']").
-                    $(byText("Удаленная работа")).click(usingJavaScript());
+            $("[data-test-id='JobsFilterCategorySelectField'] [class*='dropDown']")
+                    .$(byText("Удаленная работа")).click(usingJavaScript());
         });
         step("Проверить, что выбрана удаленная работа", () -> {
-            $("[data-test-id='JobsFilterCategorySelectField'] [class*='selectInput']").shouldHave(text("Удаленная работа"));
+            $("[data-test-id='JobsFilterCategorySelectField'] [class*='selectInput']")
+                    .shouldHave(text("Удаленная работа"));
         });
     }
 }
