@@ -95,7 +95,7 @@ public class UiTests extends TestBaseUi {
     @Test
     @AllureId("1751")
     @Feature("Search Filters")
-    @DisplayName("Проверить работу фильтров поиска")
+    @DisplayName("Проверить работу фильтра категорий в поиске")
     void checkSearchFilters() {
         step("Открываем страницу с результатами поиска", () -> {
             open("https://kazan.vkrabota.ru/vacansii/?distanceTo=4&keyWord=тест&salary=1");
