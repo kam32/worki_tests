@@ -34,7 +34,7 @@ public class UiTests extends TestBaseUi {
     @Test
     @AllureId("1748")
     @Feature("Job Categories")
-    @DisplayName("Проверка количество элементов в слайдере \"Вакансии по категориям\"")
+    @DisplayName("Проверка количества элементов в слайдере \"Вакансии по категориям\"")
     void checkJobCategoriesSize() {
         step("Открываем главную страницу", () -> {
             open("");
