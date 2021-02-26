@@ -14,12 +14,12 @@
 
 ## Скриншоты
 ***
-Запуск тестов организован в Jenkins. Посмотреть можно по ссылке  
+Запуск тестов организован в Jenkins. Посмотреть можно по ссылке https://jenkins.autotests.cloud/job/C03-kam75-worki/  
 Тесты могут запускаться параллельно.
 ***
 ### Allure Report 
 ***
-Отчет о прохождении тестов Allure Report можно посмотреть по ссылке 
+Отчет о прохождении тестов Allure Report можно посмотреть по ссылке https://jenkins.autotests.cloud/job/C03-kam75-worki/3/allure/
 ***
 ![alt-AllureReport](src/test/resources/images/AllureReport1.png "AllureReport")
 ![alt-AllureReport](src/test/resources/images/AllureReport2.png "AllureReport")
@@ -40,8 +40,7 @@
 ***
 Создана задача в Jira. К ней добавлены тест-кейсты, информация о запусках тестов.
 ***
-![alt-Jira](src/test/resources/images/Jira1.png "Jira")
-![alt-Jira](src/test/resources/images/Jira2.png "Jira")
+![alt-Jira](src/test/resources/images/Jira.png "Jira")
 ***
 ### Telegram Notifications
 ***
