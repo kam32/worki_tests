@@ -46,7 +46,7 @@
 ***
 После окончания тестов результаты отправляются в Telegram
 ***
-![alt-TelegramNotifications](src/test/resources/images/Telegram.png "Telegram")
+![alt-TelegramNotifications](https://github.com/kam32/worki_tests/raw/master/src/test/resources/images/Telegram.png "Telegram")
 
 
 
