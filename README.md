@@ -34,8 +34,8 @@
 В качестве системы управления тестами использован Allure TestOps.  
 ***
 ![alt-AllureTestOps](https://github.com/kam32/worki_tests/raw/master/src/test/resources/images/AllureTestOps1.png "AllureTestOps")
-![alt-AllureTestOpsv](https://github.com/kam32/worki_tests/raw/master/src/test/resources/images/AllureTestOps2.png "AllureTestOps")
-![alt-AllureTestOpsv](https://github.com/kam32/worki_tests/raw/master/src/test/resources/images/AllureTestOps3.png "AllureTestOps")
+![alt-AllureTestOps](https://github.com/kam32/worki_tests/raw/master/src/test/resources/images/AllureTestOps2.png "AllureTestOps")
+![alt-AllureTestOps](https://github.com/kam32/worki_tests/raw/master/src/test/resources/images/AllureTestOps3.png "AllureTestOps")
 ### Jira
 ***
 Создана задача в Jira. К ней добавлены тест-кейсты, информация о запусках тестов.
